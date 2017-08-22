@@ -1,0 +1,45 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.media-wrapper {
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.media-wrapper + .media-wrapper {
+    margin-top: 110vh;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+    width: 80%;
+}
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
