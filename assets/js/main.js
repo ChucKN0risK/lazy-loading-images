@@ -1,6 +1,6 @@
 'use strict';
 
-// Small polyfill for borwsers not supporting forEach (Edge)
+// Small polyfill for browsers not supporting forEach (Edge)
 if (NodeList.prototype.forEach === undefined) {
     NodeList.prototype.forEach = Array.prototype.forEach
 }
